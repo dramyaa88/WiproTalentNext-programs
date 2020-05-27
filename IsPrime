@@ -1,0 +1,31 @@
+Write a function to find whether the given number is prime
+
+class IsPrime
+{
+public int numbers(int input1)
+{
+int m;
+		m=input1/2;
+		int flag = 0;
+		if(input1==0 || input1==1)
+		{
+			return 1;
+		}
+		else
+		{
+		for(int i = 2;i<=m;i++)
+		{
+			if(input1%i==0)
+			{
+				flag=1;
+				break;
+			}
+
+		}
+		if(flag==0)
+			return 2;
+		else
+			return 1;
+		}
+}
+}
