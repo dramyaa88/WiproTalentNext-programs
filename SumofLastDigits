@@ -1,0 +1,11 @@
+Write a function to find the sum of last digit of the given 2 numbers
+
+class sumDigits
+{
+public int number(int input1,int input2)
+{
+int i = input1%10;
+int j = input2%10;
+return i+j;
+}
+}
