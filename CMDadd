@@ -1,0 +1,19 @@
+Using command line arguments find the addition of 2 numbers
+
+import java.util.Scanner;
+
+public class Sum {
+
+	public static void main(String args[]) {
+		// TODO Auto-generated method stub
+		int a,b,c;
+		Scanner sc = new Scanner(System.in);
+		a=Integer.parseInt(args[0]);
+		
+		b=Integer.parseInt(args[1]);
+		c=a+b;
+		System.out.println("The sum of 10 and 20 is "+c);
+
+	}
+
+}
