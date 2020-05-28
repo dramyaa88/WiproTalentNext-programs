@@ -1,0 +1,15 @@
+Function to Count digits of a number
+
+class CountDigits
+{
+public int number(int input1)
+{
+    int count=1;
+		while(input1>=10)
+		{
+			input1=input1/10;
+			count++;	
+		}
+		return count;
+}
+}
