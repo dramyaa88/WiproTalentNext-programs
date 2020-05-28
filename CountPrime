@@ -1,0 +1,28 @@
+Function to count the prime numbers
+
+class CountPrime
+{
+public int number(int input1,int input2)
+{
+    int count;
+		int countdigits=0;
+		for(int i = input1;i<=input2;i++)
+		{
+			count = 0;
+			for(int j = 1;j<=i;j++)
+			{
+				if(i%j==0)
+				{
+					count=count+1;
+				}
+			}
+			if(count==2)
+				{
+					countdigits++;
+				}
+			
+		}
+		return countdigits;
+		
+}
+}
