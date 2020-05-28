@@ -4,7 +4,8 @@ class number
 {
 public int number(int input1)
 {
-int i=input1%10;
-return i;
+int i=abs(input1);
+int a=i%10;
+return a;
 }
 }
