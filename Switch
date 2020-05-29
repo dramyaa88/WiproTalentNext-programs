@@ -1,0 +1,36 @@
+Write a program to print the color name, based on color code. If color code in not valid then print "Invalid Code".
+R->Red, B->Blue, G->Green, O->Orange, Y->Yellow, W->White.
+
+public class ifColour {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char ch = 'R';
+		
+		switch(ch)
+		{
+		case 'R':
+			System.out.println(ch+"->"+"Red");
+			break;
+		case 'B':
+			System.out.println(ch+"->"+"Blue");
+			break;
+		case 'G':
+			System.out.println(ch+"->"+"Green");
+			break;
+		case 'Y':
+			System.out.println(ch+"->"+"Yellow");
+			break;
+		case 'W':
+			System.out.println(ch+"->"+"White");
+			break;
+		case 'O':
+			System.out.println(ch+"->"+"Orange");
+			break;
+		default:
+			System.out.println("Invalid code");
+		}
+
+	}
+
+}
