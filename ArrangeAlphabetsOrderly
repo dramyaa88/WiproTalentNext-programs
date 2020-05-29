@@ -10,20 +10,23 @@ public class ArrangeAlphabets {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		char[] arr=new char[] {'t','e'};
-		Arrays.sort(arr);
-		for(int i =0;i<arr.length;i++)
+		char a='e';
+		char b='c';
+		int i1=Character.getNumericValue(a);
+		int i2=Character.getNumericValue(b);
+		if(i1<i2)
 		{
-			if(i==arr.length-1)
-			{
-				System.out.print(arr[i]);
-			}
-			else
-			{
-				System.out.print(arr[i]+",");
-			}
-			
+			System.out.println(a+","+b);
 		}
+		else
+		{
+			System.out.println(b+","+a);
+		}
+	}
+
+}
+
+		
 		
 		
 
