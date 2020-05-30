@@ -1,0 +1,39 @@
+Write a program to initialize an integer array and find the maximum and minimum value .
+
+public class ArrayMax {
+	public static int Max(int arr[])
+	{
+		int max=arr[0];
+		for(int i=0;i<arr.length-1;i++)
+		{
+			if(arr[i]>max)
+			{
+				max=arr[i];
+			}
+		}
+		return max;
+	}
+	public static int Min(int arr[])
+	{
+		int min=arr[0];
+		for(int i=0;i<arr.length-1;i++)
+		{
+			
+			if(arr[i]<min)
+			{
+				min=arr[i];
+			}
+		}
+		return min;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {2,4,6,8,5};
+		System.out.println(ArrayMax.Max(arr));
+		System.out.println(ArrayMax.Min(arr));
+		
+
+	}
+
+}
