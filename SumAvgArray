@@ -1,0 +1,28 @@
+Write a program to initialize an integer array and print the sum and average of the array.
+
+public class Array {
+	public static int doSum(int arr[])
+	{
+		int sum = 0;
+		for(int i=0;i<arr.length;i++)
+		{
+			sum=sum+arr[i];
+		}
+		return sum;
+	}
+	public static int average(int b,int arr[])
+	{
+		return b/(arr.length);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {2,4,6,8,5};
+		int a = Array.doSum(arr);
+		System.out.println(a);
+		System.out.println(Array.average(a,arr));
+		
+
+	}
+
+}
