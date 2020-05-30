@@ -1,0 +1,28 @@
+Write a program to find the largest 2 numbers and the smallest 2 numbers in the given array
+
+import java.util.Arrays;
+
+public class LargeSmall2 {
+	public static String searchMin(int arr[])
+	{
+		Arrays.parallelSort(arr);
+		return (arr[0]+" "+arr[1]);
+		
+	}
+	public static String searchMax(int arr[])
+	{
+		int n = arr.length;
+		Arrays.parallelSort(arr);
+		return (arr[n-2]+" "+arr[n-1]);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {4,9,8,3,6,1};
+		System.out.println(LargeSmall2.searchMin(arr));
+		System.out.println(LargeSmall2.searchMax(arr));
+
+	}
+
+}
