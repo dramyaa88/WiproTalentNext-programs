@@ -1,0 +1,42 @@
+Write a program to initialize an integer array with values and check if a given number is present in the array or not.
+If the number is not found, it will print -1 else it will print the index value of the given number in the array.
+
+Ex1) Array elements are {1,4,34,56,7} and the search element is 90
+O/P: -1
+
+Ex2)Array elements are {1,4,34,56,7} and the search element is 56
+O/P: 4
+
+public class Search {
+	public static int Searchnum(int arr[],int searc)
+	{
+		int flag=0;
+		int a=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==searc)
+			{
+				a=i;
+				flag=1;
+			}
+		}
+		if(flag==1)
+		{
+			return a;
+		}
+		else
+		{
+			return -1;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {2,4,6,8,5};
+		int search=18;
+		System.out.println(Search.Searchnum(arr,search));
+		
+
+	}
+
+}
